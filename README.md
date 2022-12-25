@@ -16,7 +16,7 @@ The WS2811 IC provides 256 levels of PWM control per channel and a single wire N
 - 3 Channels of LED switching with 18mA constant current sink capability per channel (@ 5v)
 - An additional "Power State" channel to provide a sink to LED channel 1 when XC6194 is in Off State (more details [below](/README.md#power-state-channel))
 - Voltage translation on SW (Switch) output -> MCU input with Schmitt-Trigger input/inverted output
-- Anode series resistor to provide global LED current control (more details [below](/README.md#anode series resistor))
+- Anode series resistor to provide global LED current control (more details [below](/README.md#anode-series-resistor))
 - On-board micro switch for secondary XC6194A control
 - Mount holes will accept Wurth Electronics SMT Standoffs
 
