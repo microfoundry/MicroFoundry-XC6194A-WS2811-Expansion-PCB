@@ -4,6 +4,7 @@ Information about the XC6194A Expansion PCB based on the WS2811 IC to drive 3 LE
 ## Description
 The Micro Foundry XC6194A WS2811 (aka: NeoPixel) RGB Expansion PCB provides the ability to drive a RGB LED illuminated Momentary switch or up to 3 individual LED indicators (with common anode) in addition to offering voltage translation where the XC6194A switched VCC differs from MCU VCC. 
 
+## WS2811 Features
 The WS2811 IC provides 256 levels of PWM control per channel and a single wire NZR communication protocol supported by numerous Aurdino libraries such as:
 - [Adafruit NeoPixel](https://github.com/adafruit/Adafruit_NeoPixel)
 - [NeoPixelBus by Makuna](https://github.com/Makuna/NeoPixelBus/wiki)
@@ -12,7 +13,7 @@ The WS2811 IC provides 256 levels of PWM control per channel and a single wire N
 
 **Please NOTE:** Color representation is totally dependant on the LEDs utilized. Therefore there are no guarentees this LED driver will have the ability to produce the accurite color representation possible with 3x LEDs.
 
-## Features
+## Expansion PCB Features
 - 3 Channels of LED switching with 18mA constant current sink capability per channel (@ 5v)
 - An additional "Power State" channel to provide a sink to LED channel 1 when XC6194 is in Off State (more details [below](/README.md#power-state-channel))
 - Voltage translation on SW (Switch) output -> MCU input with Schmitt-Trigger input/inverted output
