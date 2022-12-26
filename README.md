@@ -5,13 +5,13 @@ Information about the XC6194A Expansion PCB based on the WS2811 IC to drive 3 LE
 The Micro Foundry XC6194A WS2811 (aka: NeoPixel) RGB Expansion PCB provides the ability to drive a RGB LED illuminated Momentary switch or up to 3 individual LED indicators (with common anode) in addition to offering voltage translation where the XC6194A switched VCC differs from MCU VCC. 
 
 ## WS2811 Features
-The WS2811 IC provides 256 levels of PWM control per channel and a single wire NZR communication protocol supported by numerous Aurdino libraries such as:
+The WS2811 IC provides 256 levels of PWM control per channel and a single wire NZR communication protocol supported by numerous Arduino libraries such as:
 - [Adafruit NeoPixel](https://github.com/adafruit/Adafruit_NeoPixel)
 - [NeoPixelBus by Makuna](https://github.com/Makuna/NeoPixelBus/wiki)
 - [FastLED](https://github.com/FastLED/FastLED)
-- And many others can be found within the Aurduino Library Manager...
+- And many others can be found within the Arduino Library Manager...
 
-**Please NOTE:** Color representation is totally dependant on the LEDs utilized. Therefore there are no guarentees this LED driver will have the ability to produce the accurite color representation possible with 3x LEDs.
+**Please NOTE:** Color representation is totally dependent on the LEDs utilized. Therefore, there are no guarantees this LED driver will have the ability to produce the accurate color representation possible with RGB LEDs.
 
 ## Expansion PCB Features
 - 3 Channels of LED switching with 18mA constant current sink capability per channel (@ 5v)
@@ -46,7 +46,7 @@ The WS2811 IC provides 256 levels of PWM control per channel and a single wire N
 | 7 | DO | LED 2 Driver | Output | MCU VCC |
 | 8 | NC | No connection to PCB |  |  |
 
-**NOTE-1:** The Power Good Output is traditionally uitilized to enable a downstream power supply, therefore the output operates at XC6194A VIn Potential. Please verify voltage compatability before connecting.
+**NOTE-1:** The Power Good Output is traditionally utilized to enable a downstream power supply, therefore the output operates at XC6194A VIn Potential. Please verify voltage compatibility before connecting.
 
 ### Expansion
 
@@ -59,10 +59,10 @@ The WS2811 IC provides 256 levels of PWM control per channel and a single wire N
 | 5 | PG | XC6194A Power Good | Output (Active HIGH) | XC6194A VIn |
 | 6 | SHDN | XC6194A Shutdown | Input (Active HIGH) **See NOTE-2** | GND |
 
-**NOTE-2:** Circuit is pulled to GND via pull-down resistor. XC6149A datasheet specifies a voltage level above 1.1v will trigger shutdown. Some MCUs may exihibit an output glitch on the SHDN during power-up and the XC6194 may immediately shutdown. If this is experienced, a user implemented RC filter could possibly eliminate the issue.
+**NOTE-2:** Circuit is pulled to GND via pull-down resistor. XC6149A datasheet specifies a voltage level above 1.1v will trigger shutdown. Some MCUs may exhibit an output glitch on the SHDN during power-up and the XC6194 may immediately shutdown. If this is experienced, a user implemented RC filter could possibly eliminate the issue.
 
 ## Power State Channel
-Channel 1 LED has a SPDT analog switch with its input referenced to VOut. When the XC6194A is in its off-state, the switch will connect the Channel 1 LED cathode to GND, therefore illuminating the LED. This can be useful to provide a vsual indicator that the power is off. When the XC6194A is in its on-state, the switch will connect the Channel 1 LED cathode to the WS2811 which will be free to drive the LED. If there is no desire to have the Channel 1 LED illuminated when the power is off, this feature can disabled by relocating the R1/R2 resistor as indicated in the following image:
+Channel 1 LED has a SPDT analog switch with its input referenced to VOut. When the XC6194A is in its off-state, the switch will connect the Channel 1 LED cathode to GND, therefore illuminating the LED. This can be useful to provide a visual indicator that the power is off. When the XC6194A is in its on-state, the switch will connect the Channel 1 LED cathode to the WS2811 which will be free to drive the LED. If there is no desire to have the Channel 1 LED illuminated when the power is off, this feature can be disabled by relocating the R1/R2 resistor as indicated in the following image:
 
 **TODO:** Add image to indicate R1/R2 relocation...
 
