@@ -2,7 +2,7 @@
 Information about the XC6194A Expansion PCB based on the WS2811 IC to drive 3 LEDs and discrete logic to provide voltage translation
 
 ## Why?
-I utilize the TOREX XC6194A in various projects and some NeoPixels as part of the design. A Ws2811 driver was an easy accessory to complement the XC6194 breakout, including a few additional features.
+I utilize the TOREX XC6194A in various projects and some NeoPixels as part of the design. A WS2811 RGB driver was an easy accessory to complement the XC6194 breakout, including a few additional features.
 
 ## Description
 The Micro Foundry XC6194A WS2811 (aka: NeoPixel) RGB Expansion PCB provides the ability to drive a RGB LED illuminated Momentary switch or up to 3 individual LED indicators (with common anode) in addition to offering voltage translation where the XC6194A switched VCC differs from MCU VCC. 
