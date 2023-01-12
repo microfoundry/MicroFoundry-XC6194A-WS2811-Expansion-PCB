@@ -82,6 +82,6 @@ The resistor noted in the following image offers global current control via the 
 - [Micro Foundry XC6194A USB-C Breakout PCB](https://github.com/microfoundry/MicroFoundry-XC6194A-USB-C-Breakout-PCB)
 
 ## XC6194A Expansion PCBs
-- [Micro Foundry XC6194A Discrete Logic RGB Expansion PCB](https://github.com/microfoundry/MicroFoundry-XC6194A-Discrete-Expansion-PCB)
+- [Micro Foundry XC6194A Discrete Logic RGB Expansion PCB](https://github.com/microfoundry/MicroFoundry-XC6194A-Discrete-Logic-Expansion-PCB)
 - [Micro Foundry XC6194A WS2811 RGB Expansion PCB](https://github.com/microfoundry/MicroFoundry-XC6194A-WS2811-Expansion-PCB)
 - [Micro Foundry XC6194A IS31FL3193 RGB Expansion PCB](https://github.com/microfoundry/MicroFoundry-XC6194A-IS31FL3193-Expansion-PCB)
